@@ -96,8 +96,8 @@ jobs:
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         #########################################################################################
-        #sed -i '/CONFIG_FIRMWARE_INCLUDE_SFTP/d' .config
-        #echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SFTP/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config
 
         CONFIG_FIRMWARE_INCLUDE_SFTP=n
         sudo ./clear_tree
